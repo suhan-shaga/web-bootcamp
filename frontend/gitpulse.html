@@ -10,7 +10,38 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.nav {
+  display: flex;              /* Make it a flexbox */
+  justify-content: center;    /* Center links horizontally */
+  align-items: center;        /* Center links vertically */
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding:  25px;
+  transition: all 200ms;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
 
+.nav a {
+  padding: 0 15px;            /* Horizontal spacing only */
+  text-decoration: none;
+  color: gray;
+}
+
+
+.nav a:hover {
+    text-decoration: underline;
+    color: black;
+     transform: scale(1.05);
+    transition: trasnform 0.3s;
+}
 :root {
   --white: #ffffff;
   --bg: #f8f9fa;
@@ -864,7 +895,13 @@ footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-
+<div class="nav">
+        <a href="index.html">Home</a>
+        <a href="leetcode-stats.html" >Leetcode Stats</a>
+        <a href="codeforces-stats.html" >Codeforce Stats</a>
+        <a href="gitpulse.html" >Git Pluse</a>
+        <a href="ask-gemini.html" >Ask Gemini</a>
+    </div>
 <!-- SEARCH PAGE -->
 <div id="search-page">
   <div class="logo-area">

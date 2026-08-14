@@ -7,6 +7,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.5/purify.min.js"></script>
 <style>
+  .nav {
+  display: flex;              /* Make it a flexbox */
+  justify-content: center;    /* Center links horizontally */
+  align-items: center;        /* Center links vertically */
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding:  25px;
+  transition: all 200ms;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.nav a {
+  padding: 0 15px;            /* Horizontal spacing only */
+  text-decoration: none;
+  color: gray;
+}
+
+
+.nav a:hover {
+    text-decoration: underline;
+    color: black;
+     transform: scale(1.05);
+    transition: trasnform 0.3s;
+}
   body { font-family: system-ui, sans-serif; margin: 0; padding: 12vh 20px 60px;
          text-align: center; background: #fff; color: #222; transition: 0.3s; }
   body.dark { background: #0a0b0d; color: #eee; }
@@ -78,6 +110,13 @@
 </style>
 </head>
 <body>
+  <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="leetcode-stats.html" >Leetcode Stats</a>
+        <a href="codeforces-stats.html" >Codeforce Stats</a>
+        <a href="gitpulse.html" >Git Pluse</a>
+        <a href="ask-gemini.html" >Ask Gemini</a>
+    </div>
 
 <button id="gear" title="Settings">⚙️</button>
 <button id="theme" title="Switch theme">🌙</button>

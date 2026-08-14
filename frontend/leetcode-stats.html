@@ -8,6 +8,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  .nav {
+  display: flex;              /* Make it a flexbox */
+  justify-content: center;    /* Center links horizontally */
+  align-items: center;        /* Center links vertically */
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding:  25px;
+  transition: all 200ms;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.nav a {
+  padding: 0 15px;            /* Horizontal spacing only */
+  text-decoration: none;
+  color: gray;
+}
+
+
+.nav a:hover {
+    text-decoration: underline;
+    color: black;
+     transform: scale(1.05);
+    transition: trasnform 0.3s;
+}
   :root, [data-theme="light"] {
     --bg: #ffffff;
     --text: #1f2328;
@@ -308,6 +340,13 @@
 </style>
 </head>
 <body>
+  <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="leetcode-stats.html" >Leetcode Stats</a>
+        <a href="codeforces-stats.html" >Codeforce Stats</a>
+        <a href="gitpulse.html" >Git Pluse</a>
+        <a href="ask-gemini.html" >Ask Gemini</a>
+    </div>
   <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme" title="Switch theme">🌙</button>
 
   <main>
