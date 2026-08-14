@@ -42,3 +42,23 @@ function random(){
             console.log("error:"+err);
          })
 }
+function myrandom(){
+     fetch("/api/random-user")
+         .then(function(res){
+            return res.json();
+         })
+         .then(function(data){
+            var name=document.getElementById("name");
+            var gend=document.getElementById("gend");
+            var imge=document.getElementById("imge");
+           
+            name.innerHTML=data.name;
+            gend.innerHTML=data.gender;
+            imge.src=data.imge;
+
+
+         })
+         .catch(function(err){
+            console.log("error:"+err);
+         })
+}
